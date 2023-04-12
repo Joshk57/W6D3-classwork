@@ -117,3 +117,12 @@ model later. (Soon!)
 Next up: the controller!
 
 [diagram]: https://assets.aaonline.io/fullstack/rails/assets/rails_diagram.png
+
+<!-- class ChangeUsers < ActiveRecord::Migration[7.0]
+  def change
+    remove_column :users, :name
+    remove_column :users, :email 
+    add_column :users, :username, :string, null: false
+    add_index :users, :username, unique: true
+  end
+end -->
