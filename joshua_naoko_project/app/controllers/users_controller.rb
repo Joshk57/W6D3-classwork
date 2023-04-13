@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
     def index
-        debugger
+        # debugger
         @users = User.all
         render json: @users
     end
@@ -35,9 +35,10 @@ class UsersController < ApplicationController
     end
 
     def destroy
+        debugger
         @user = User.find(params[:id])
         @user.destroy
-        redirect_to user_url
+        render json: @user
     end
 
     private 
