@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     end
 
     def destroy
-        debugger
+        # debugger
         @user = User.find(params[:id])
         @user.destroy
         render json: @user
